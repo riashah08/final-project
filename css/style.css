@@ -1,0 +1,603 @@
+/***** STARTER CODE - DO NOT CHANGE *****/
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+background-color: #737373;
+font-size: 16px;
+margin: 0;
+padding: 0;
+
+}
+h3{
+text-align: center;
+font-size: 20px;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+h1{
+font-size: 50px;
+line-height: 1;
+padding: 50px 0;
+text-align: center;
+font-family: 'Architects Daughter', cursive;
+animation-name: slidein;
+animation-duration: 5s;
+position: relative;
+}
+
+h2{
+font-size: 32px;
+line-height: 1.5;
+text-align: center;
+font-family: 'Architects Daughter', cursive;
+/* background-color: #f8dcd1; */
+}
+html, body{
+height: 100%;
+}
+
+main{
+  background-color: #f8dcd1;
+}
+
+nav li{
+display: inline;
+padding-right: 15px;
+font-size:18px;
+}
+
+nav{
+background-color: #f8dcd1;
+padding: 25px 0;    
+text-align: left;
+vertical-align: text-bottom;
+font-size: 14px;  
+display:flex;
+flex-wrap: nowrap;
+padding-left: 10px;
+}
+
+header p{
+color: white;
+font-size: 24px;
+text-align: center;
+}
+
+footer{
+background-color: #ce9f95;
+color: #000000;
+/* padding-top: px; */
+text-align: center;
+bottom: 0;
+width: 100%;
+position: relative;
+}
+
+
+
+
+/*****  End Starter Code ****/
+
+nav a{
+color: black;
+font-weight: bold;
+text-decoration: none;
+font-family: 'Patrick Hand', cursive;
+/* display: flex;
+flex-direction: row;
+flex-wrap: nowrap; */
+
+
+}
+
+
+/* nav a:visited{
+/* text-decoration: underline; */
+*/
+nav a:focus{
+border-bottom: 1px solid;
+text-decoration: underline;
+}
+nav a:hover{
+text-decoration: underline;
+font-family: 'Patrick Hand', cursive;
+}
+
+nav a.current{
+text-decoration: underline;
+text-transform: uppercase;
+font-family: 'Patrick Hand', cursive;
+}
+
+.skip a{
+background: white;
+left: 0;
+padding: 6px;
+transition: top 1s ease-out;
+z-index: 1;
+position: absolute;
+top: -40px;
+}
+.skip a:focus{
+position: absolute;
+top: 0px;
+}
+
+.gallery-header{
+text-align: center;
+padding-bottom: 10px;
+background-color: #f8dcd1;
+}
+*:focus{
+border: 2px solid;
+}
+.appoint{
+text-align: center;
+
+}
+.appoint-header{
+background-color: #f8dcd1;
+}
+.container{
+/* Requirement 5 code here*/
+display: grid;
+grid-template-columns: 1fr;
+grid-row-gap: 15px;
+background-color: #f8dcd1;
+padding: 10px;
+min-height: 100%;
+width: 100%;
+font-size: 28px;
+
+}
+
+/* Remainder of requirements here: */
+
+header{
+  width: 100%;
+  height:auto;
+  background-color: #f8dcd1;
+  background-image: url("../images/shruti.png"); 
+  overflow:scroll;
+  object-fit: scale-down;
+  height: 490px;
+  background-position-y: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  
+}
+#page-container{
+  position: relative;
+min-height: 100%;
+
+}
+header p{
+  color:black;
+}
+.menu-header{
+  display: grid;
+  grid-template-rows: 1/-1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8dcd1;
+}
+
+
+.contact{
+  background-color: #f8dcd1;
+  /* display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/-1; */
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+#contact a{
+  display:list-item;
+  /* grid-row: 1\-1;
+  row-gap: 30px; */
+}
+.about{
+  grid-column: 2/ span 1;
+  grid-row: 2/ span 1;
+}
+.picture{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #f8dcd1;
+  grid-template-columns: 1fr;
+}
+.picture img{
+  overflow: hidden;
+  width:80%;
+  border: solid 2px;
+  margin: 10px;
+}
+
+.facial-item-wax{
+  flex-basis: fit-content;
+}
+
+dt,dd{
+display:inline-block;
+width:40%;
+padding-left: 20px;
+font-family:'Patrick Hand', cursive;
+}
+
+fieldset{
+background-color: #ce9f95;
+}
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+border: 10px solid black;
+padding: 30px;
+align-self: center; 
+/* Your code here */
+
+}
+
+
+body{
+background-color: #ffffff;
+}
+legend{ 
+  padding-top:20px;
+font-size: 145%;
+font-style:italic;
+text-transform: uppercase;
+text-align: center;
+font-family: 'Patrick Hand', cursive;
+}
+
+label{
+display: inline-block;
+margin-right:10px;
+width:25%;
+font-family: 'Patrick Hand', cursive;
+padding-left: 10px;;
+}
+input {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+span{
+margin-left:20%;
+font-family: italic;
+font-weight: bold;
+}
+
+textarea{
+width: 100%;
+height: 35vh;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+input[type=checkbox]{
+display:inline;
+width:inherit;
+}
+
+input[type=submit] {
+background-color: #38803C;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+input[type=submit]:hover {
+opacity: 0.8;
+}
+input[type=radio] {
+display: inline;
+width:inherit;
+margin: 10px;
+}
+
+ul, p {
+text-align:left;
+font-family: 'Patrick Hand', cursive;
+}
+
+figure{
+display: flex;
+flex-direction: column;
+margin: 0;
+justify-content: center;
+align-items: center;
+justify-items: center;
+min-width: 230px;
+width: 30%;
+}
+
+img.scaled {
+width: 80%;
+}
+
+.flex-item, .flex-item-facial, .facial-item-wax {
+/*width: 350px;
+height: null;*/
+flex-grow: 1;
+flex-shrink: 0;
+flex-basis: 100px;
+justify-content: center;
+display: flex;
+
+/* padding-left: 20px; */
+}
+
+@keyframes slidein {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+  
+}
+}
+
+.flex-item img:hover, .facial-item-wax img:hover, .flex-item-facial img:hover {
+filter: grayscale(10);
+border-radius: 10px;
+border: 10px solid black;
+}
+
+
+@media screen and (min-width: 760px){
+nav{
+  padding: 30px 0;
+  text-align: right;
+  justify-content: end;
+  font-size: 18px;
+}
+
+.container{
+  grid-template-columns: 1fr 1fr;
+  background-color: #f8dcd1;
+
+
+}
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: 100%; /* Parallax effect */
+  color: #000000;
+  height: 500px; /*  Parallax effect */
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+}
+.picture{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+img.scaled {
+  width: 80%;
+}
+
+
+form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+input{
+  width:70%;
+}
+
+textarea{
+  width:70%;
+  height: 25vh;
+}
+
+div + label{
+  /* line-height: 25vh; */
+  vertical-align:top;
+}
+
+ul, p{
+  text-align:center;
+}
+
+figure{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  min-width: 230px;
+  width: 30%;
+}
+.flex-item {
+  /*width: 350px;
+  height: null;*/
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  justify-content: flex-start;
+  display: flex;
+
+  /* padding-left: 20px; */
+}
+.flex-item img {
+  cursor: pointer;
+}
+
+.flex-item-facial{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  justify-content: flex-start;
+  display: flex;
+}
+figcaption{
+text-align: center;
+}
+
+.flip-card{
+  background-color: transparent;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+.flip-card-inner{
+  position: relative;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner, .flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #ce9f95;
+  color: black;
+}
+.flip-card-back {
+  background-color: #ce9f95;
+  color: #000000;
+  transform: rotateY(180deg);
+}
+
+nav li{
+  border: solid black;
+  padding:2px;
+}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+.container{
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+}
+dl{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+dt{
+  padding-top: 20px;
+}
+nav{
+  justify-content: center;
+  font-size: 22px;
+}
+
+.flex-item-facial{
+  justify-content: center;
+}
+ul, p, dl{
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+.picture {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+
+}
+
+.flex-item-facial, .flex-item, .facial-item-wax{
+  flex-basis: 250px;
+  justify-content: center;
+}
+.gallery-header{
+  display: flex;
+
+}
+
+label{
+  font-size: 22px;
+}
+
+}  
+
+
+
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+ *************************************** 
+ */
+@media screen and (prefers-reduced-motion: reduce){
+/*Turn off scroll*/
+html{
+    scroll-behavior: auto; /* Removes scroll animation */
+}
+
+/*Turn off transition*/
+.skip a{
+  -webkit-transition: initial; /* sets to default setting */
+  transition: initial; /* sets to default setting */
+}
+
+/*Turn off parallax*/
+header{
+  background-attachment: initial;
+}
+h1{
+  animation:none;
+}
+
+.flip-card-back{
+  background-color: #ce9f95;
+  color: #000000;
+  transform: none;
+}
+.flip-card-inner{
+  position: relative;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  transition: none;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card-front{
+  visibility: none;
+  transform: none;
+}
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner, .flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: none;
+}
+}

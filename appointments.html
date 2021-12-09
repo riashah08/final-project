@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Architects+Daughter&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <title>Shruti's Salon</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    
+    <header>
+    <nav>
+        <ul>
+          <li><a href=index.html>Services</a></li>
+          <li><a href=gallery.html>Gallery</a></li>
+          <li><a href=appointments.html class = "current">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="main">
+        <h1> Shruti's Salon</h1>
+        <h2> Quality Care at Home!</h2>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="appoint-header">
+        <a id="appoint"></a>
+        <h2>Book Your Appointment!</h2>
+      </div>
+      <form action="https://formspree.io/f/xvolpoej" method="POST">
+        <fieldset>
+          <legend>Appointment Form</legend>
+          <label for = "name">Your Name</label>
+          <input type="text" id = "name" name = "Full Name" placeholder="Enter Your Name">
+      
+          <label for = "email">Your Email</label>
+          <input type="email" id = "email" name = "email">
+      
+      
+          <label for = "tel"> Your Phone Number</label>
+          <input type="tel" id = "tel" name = "Number">
+          <div><span>Format: 123-456-7890</span></div>
+      
+      
+        <label for = "leave"> Appointment Time</label><br>
+         <input type="radio" id="leave" name="leave" value="monday">
+           <label for="Monday">Monday</label><br>
+         <input type="radio" id="leave" name="leave" value="Tuesday">
+          <label for="Tuesday">Tuesday</label><br>
+        <input type="radio" id="leave" name="leave" value="Wednesday">
+          <label for="Wednesday">Wednesday</label><br>
+        <input type="radio" id="leave" name="leave" value="Thursday">
+          <label for="Thursday">Thursday</label><br>
+        <input type="radio" id="leave" name="leave" value="Friday">
+          <label for="Friday">Friday</label><br>
+        <input type="radio" id="leave" name="leave" value="Saturday">
+          <label for="Saturday">Saturday</label><br>
+        <input type="radio" id="leave" name="leave" value="Sunday">
+          <label for="Sunday">Sunday</label><br>
+          
+      
+      
+      
+         <input type="submit" value = "SUBMIT">
+        </fieldset>
+        </form>
+
+    </main>
+      <footer>
+        <p>University of Michigan School of Information <br/>
+          &copy; Ria Shah </p>
+      </footer>
+
+    </body>
+  </html>
+
+
